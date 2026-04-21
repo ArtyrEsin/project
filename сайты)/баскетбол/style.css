@@ -6,8 +6,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #f5f7fb;
-  color: #1f2937;
+  background: #0f172a;
+  color: #ffffff;
   line-height: 1.6;
 }
 
@@ -31,33 +31,35 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .nav {
-  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 80px;
 }
 
 .logo {
   font-size: 28px;
   font-weight: bold;
-  color: #60a5fa;
+  color: #f59e0b;
 }
 
 .menu {
   display: flex;
-  gap: 24px;
+  gap: 25px;
 }
 
 .menu a {
   color: #ffffff;
+  font-size: 16px;
   transition: 0.3s;
 }
 
 .menu a:hover {
-  color: #60a5fa;
+  color: #f59e0b;
 }
 
 .burger {
@@ -73,38 +75,37 @@ a {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(17, 24, 39, 0.78), rgba(17, 24, 39, 0.78)),
-    url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
-  color: #ffffff;
+  background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)),
+    url("https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
 }
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
   gap: 40px;
   align-items: center;
 }
 
 .hero-text h1 {
-  font-size: 52px;
+  font-size: 54px;
   margin-bottom: 20px;
 }
 
 .hero-text p {
   font-size: 18px;
-  max-width: 650px;
-  margin-bottom: 30px;
   color: #e5e7eb;
+  margin-bottom: 30px;
+  max-width: 650px;
 }
 
 .btn {
   display: inline-block;
-  background: #60a5fa;
+  background: #f59e0b;
   color: #111827;
   padding: 14px 28px;
-  border: none;
   border-radius: 10px;
   font-weight: bold;
+  border: none;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -113,23 +114,25 @@ a {
   background: #ffffff;
 }
 
-.hero-box {
-  background: rgba(255, 255, 255, 0.1);
+.hero-card {
+  background: rgba(17, 24, 39, 0.85);
   padding: 30px;
   border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.hero-box h3 {
-  margin-bottom: 16px;
-  color: #93c5fd;
+.hero-card h3 {
+  margin-bottom: 20px;
+  color: #f59e0b;
 }
 
-.hero-box ul {
+.hero-card ul {
   list-style: none;
 }
 
-.hero-box li {
-  margin-bottom: 12px;
+.hero-card li {
+  margin-bottom: 14px;
+  color: #e5e7eb;
 }
 
 .section {
@@ -139,137 +142,114 @@ a {
 .section-title {
   text-align: center;
   font-size: 38px;
-  margin-bottom: 40px;
-  color: #111827;
+  margin-bottom: 45px;
+  color: #f59e0b;
 }
 
-.search-box {
-  max-width: 500px;
-  margin: 0 auto 35px;
-}
-
-.search-box input {
-  width: 100%;
-  padding: 14px 16px;
-  border: 1px solid #cbd5e1;
-  border-radius: 10px;
-  font-size: 16px;
-}
-
-.products {
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 25px;
 }
 
-.product-card {
-  background: #ffffff;
+.card {
+  background: #111827;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
-.product-card:hover {
+.card:hover {
   transform: translateY(-8px);
 }
 
-.product-card img {
+.card img {
   height: 230px;
   object-fit: cover;
 }
 
-.product-body {
-  padding: 20px;
+.card-body {
+  padding: 22px;
 }
 
-.product-body h3 {
-  margin-bottom: 10px;
+.card-body h3 {
+  margin-bottom: 12px;
 }
 
-.product-body p {
-  color: #4b5563;
-  margin-bottom: 14px;
-}
-
-.price {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-  color: #2563eb;
-  margin-bottom: 15px;
-}
-
-.buy-btn {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 10px;
-  background: #111827;
-  color: #ffffff;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.buy-btn:hover {
-  background: #2563eb;
-}
-
-.empty-text {
-  text-align: center;
-  margin-top: 25px;
-  color: #6b7280;
-  font-size: 18px;
+.card-body p {
+  color: #d1d5db;
 }
 
 .dark-section {
   background: #111827;
 }
 
-.dark-section .section-title {
-  color: #ffffff;
-}
-
-.advantages-grid {
+.team-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-.adv-card {
+.team-card {
   background: #1f2937;
-  color: #ffffff;
   padding: 25px;
   border-radius: 16px;
   text-align: center;
+  transition: 0.3s;
 }
 
-.adv-card h3 {
+.team-card:hover {
+  transform: scale(1.04);
+}
+
+.team-card h3 {
+  color: #f59e0b;
   margin-bottom: 12px;
-  color: #93c5fd;
 }
 
-.seller-grid {
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #111827;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 18px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+th {
+  background: #f59e0b;
+  color: #111827;
+}
+
+.gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
 }
 
-.seller-card {
-  background: #ffffff;
-  padding: 25px;
+.gallery img {
+  height: 230px;
+  object-fit: cover;
   border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
 }
 
-.seller-card h3 {
-  margin-bottom: 12px;
-  color: #2563eb;
+.gallery img:hover {
+  transform: scale(1.04);
 }
 
 .contact-section {
-  background: #e5eefc;
+  background: #111827;
 }
 
 .contact-form {
@@ -284,10 +264,10 @@ a {
 .contact-form textarea {
   width: 100%;
   padding: 15px;
-  border: 1px solid #cbd5e1;
   border-radius: 10px;
-  font-size: 16px;
+  border: none;
   outline: none;
+  font-size: 16px;
 }
 
 .contact-form textarea {
@@ -297,28 +277,28 @@ a {
 
 .form-message {
   text-align: center;
-  margin-top: 16px;
-  color: #1d4ed8;
+  margin-top: 18px;
+  color: #f59e0b;
   font-weight: bold;
 }
 
 .footer {
-  background: #111827;
+  background: #0b1120;
   text-align: center;
-  padding: 24px 0;
+  padding: 25px 0;
   color: #cbd5e1;
 }
 
 @media (max-width: 992px) {
   .hero-content,
-  .products,
-  .advantages-grid,
-  .seller-grid {
+  .cards,
+  .team-grid,
+  .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .hero-text h1 {
-    font-size: 40px;
+    font-size: 42px;
   }
 }
 
@@ -332,7 +312,7 @@ a {
     background: #111827;
     flex-direction: column;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 14px;
   }
 
   .menu.show {
@@ -344,14 +324,14 @@ a {
   }
 
   .hero-content,
-  .products,
-  .advantages-grid,
-  .seller-grid {
+  .cards,
+  .team-grid,
+  .gallery {
     grid-template-columns: 1fr;
   }
 
   .hero-text h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .section-title {

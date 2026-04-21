@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BasketZone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">BasketZone</div>
+
+        <nav class="menu">
+          <a href="#home">Главная</a>
+          <a href="#news">Новости</a>
+          <a href="#teams">Команды</a>
+          <a href="#stats">Статистика</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+
+        <button class="burger" id="burger">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>Мир баскетбола в одном месте</h1>
+            <p>
+              Следи за новостями, изучай лучшие команды, смотри статистику
+              игроков и погружайся в атмосферу любимого спорта.
+            </p>
+            <a href="#news" class="btn">Смотреть новости</a>
+          </div>
+
+          <div class="hero-card">
+            <h3>Сегодня на сайте</h3>
+            <ul>
+              <li>Свежие новости баскетбола</li>
+              <li>Информация о командах</li>
+              <li>Статистика лучших игроков</li>
+              <li>Фото ярких моментов</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="news">
+        <div class="container">
+          <h2 class="section-title">Новости</h2>
+          <div class="cards">
+            <article class="card">
+              <img
+                src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80"
+                alt="Баскетбольная новость"
+              />
+              <div class="card-body">
+                <h3>Новый сезон стартовал ярко</h3>
+                <p>
+                  Первые матчи показали высокую результативность, отличную
+                  командную игру и много эффектных моментов.
+                </p>
+              </div>
+            </article>
+
+            <article class="card">
+              <img
+                src="https://images.unsplash.com/photo-1519766304817-4f37bda74a26?auto=format&fit=crop&w=1200&q=80"
+                alt="Игрок баскетбола"
+              />
+              <div class="card-body">
+                <h3>Лидер команды оформил трипл-дабл</h3>
+                <p>
+                  Главная звезда матча набрала очки, сделала передачи и подборы,
+                  став лучшим игроком встречи.
+                </p>
+              </div>
+            </article>
+
+            <article class="card">
+              <img
+                src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80"
+                alt="Команда на площадке"
+              />
+              <div class="card-body">
+                <h3>Тренер рассказал о стратегии</h3>
+                <p>
+                  После победы тренер отметил дисциплину игроков, быструю защиту
+                  и уверенную реализацию бросков.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark-section" id="teams">
+        <div class="container">
+          <h2 class="section-title">Популярные команды</h2>
+          <div class="team-grid">
+            <div class="team-card">
+              <h3>Almaty Eagles</h3>
+              <p>Сильная защита, быстрые атаки и отличная командная игра.</p>
+            </div>
+            <div class="team-card">
+              <h3>Astana Wolves</h3>
+              <p>Одна из самых зрелищных команд с мощной линией нападения.</p>
+            </div>
+            <div class="team-card">
+              <h3>Steppe Kings</h3>
+              <p>Известны своей стабильностью и высоким процентом попаданий.</p>
+            </div>
+            <div class="team-card">
+              <h3>Nomad Stars</h3>
+              <p>Молодой состав, который показывает быстрый рост и характер.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="stats">
+        <div class="container">
+          <h2 class="section-title">Статистика игроков</h2>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Игрок</th>
+                  <th>Команда</th>
+                  <th>Очки</th>
+                  <th>Передачи</th>
+                  <th>Подборы</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Асан</td>
+                  <td>Almaty Eagles</td>
+                  <td>28</td>
+                  <td>7</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>Дамир</td>
+                  <td>Astana Wolves</td>
+                  <td>24</td>
+                  <td>9</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Никита</td>
+                  <td>Steppe Kings</td>
+                  <td>21</td>
+                  <td>5</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Илья</td>
+                  <td>Nomad Stars</td>
+                  <td>19</td>
+                  <td>8</td>
+                  <td>7</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="container">
+          <h2 class="section-title">Галерея</h2>
+          <div class="gallery">
+            <img
+              src="curry.jpg"
+              alt="Баскетбол 1"
+            />
+            <img
+              src="bob.jpg"
+              alt="Баскетбол 2"
+            />
+            <img
+              src="basketball.jpg"
+              alt="Баскетбол 3"
+            />
+            <img
+              src="bosketball.jpg"
+              alt="Баскетбол 4"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <h2 class="section-title">Контакты</h2>
+          <form class="contact-form" id="contactForm">
+            <input type="text" id="name" placeholder="Ваше имя" />
+            <input type="email" id="email" placeholder="Ваш email" />
+            <textarea id="message" placeholder="Ваше сообщение"></textarea>
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+          <p class="form-message" id="formMessage"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 BasketZone. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
