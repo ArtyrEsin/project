@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MarketHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">MarketHub</div>
+
+      <nav class="menu" id="menu">
+        <a href="#home">Главная</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#sellers">Продавцы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <button class="burger" id="burger">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Удобный маркетплейс для покупок онлайн</h1>
+          <p>
+            Платформа, где разные продавцы размещают товары. Пользователь может
+            искать, сравнивать и покупать нужные товары быстро и удобно.
+          </p>
+          <a href="#catalog" class="btn">Перейти в каталог</a>
+        </div>
+
+        <div class="hero-box">
+          <h3>Что есть на сайте</h3>
+          <ul>
+            <li>Каталог товаров</li>
+            <li>Поиск по названию</li>
+            <li>Карточки продавцов</li>
+            <li>Удобный интерфейс</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="catalog">
+      <div class="container">
+        <h2 class="section-title">Каталог товаров</h2>
+
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Поиск товара..." />
+        </div>
+
+        <div class="products" id="productsList">
+          <article class="product-card" data-name="Смартфон X20">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80" alt="Смартфон">
+            <div class="product-body">
+              <h3>Смартфон X20</h3>
+              <p>Мощный смартфон с хорошей камерой и ярким экраном.</p>
+              <span class="price">129 990 ₸</span>
+              <button class="buy-btn">Купить</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Ноутбук ProBook">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80" alt="Ноутбук">
+            <div class="product-body">
+              <h3>Ноутбук ProBook</h3>
+              <p>Отличный вариант для учёбы, работы и повседневных задач.</p>
+              <span class="price">289 990 ₸</span>
+              <button class="buy-btn">Купить</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Наушники AirSound">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80" alt="Наушники">
+            <div class="product-body">
+              <h3>Наушники AirSound</h3>
+              <p>Беспроводные наушники с чистым звуком и долгой работой.</p>
+              <span class="price">24 990 ₸</span>
+              <button class="buy-btn">Купить</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Умные часы SmartFit">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80" alt="Часы">
+            <div class="product-body">
+              <h3>Умные часы SmartFit</h3>
+              <p>Следите за активностью, пульсом и уведомлениями каждый день.</p>
+              <span class="price">39 990 ₸</span>
+              <button class="buy-btn">Купить</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Игровая мышь GX">
+            <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=1200&q=80" alt="Мышь">
+            <div class="product-body">
+              <h3>Игровая мышь GX</h3>
+              <p>Удобная игровая мышь с подсветкой и точным сенсором.</p>
+              <span class="price">14 990 ₸</span>
+              <button class="buy-btn">Купить</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-name="Клавиатура Neon">
+            <img src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=1200&q=80" alt="Клавиатура">
+            <div class="product-body">
+              <h3>Клавиатура Neon</h3>
+              <p>Стильная клавиатура с подсветкой для игр и работы.</p>
+              <span class="price">19 990 ₸</span>
+              <button class="buy-btn">Купить</button>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-text" id="emptyText"></p>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="advantages">
+      <div class="container">
+        <h2 class="section-title">Преимущества</h2>
+        <div class="advantages-grid">
+          <div class="adv-card">
+            <h3>Большой выбор</h3>
+            <p>На платформе собраны товары от разных продавцов в одном месте.</p>
+          </div>
+          <div class="adv-card">
+            <h3>Удобный поиск</h3>
+            <p>Пользователь может быстро найти нужный товар по названию.</p>
+          </div>
+          <div class="adv-card">
+            <h3>Выгодные цены</h3>
+            <p>Легко сравнивать товары и выбирать лучшие предложения.</p>
+          </div>
+          <div class="adv-card">
+            <h3>Простой заказ</h3>
+            <p>Покупка оформляется быстро и понятно даже для новичков.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sellers">
+      <div class="container">
+        <h2 class="section-title">Популярные продавцы</h2>
+        <div class="seller-grid">
+          <div class="seller-card">
+            <h3>TechWorld</h3>
+            <p>Продавец электроники и современных гаджетов.</p>
+          </div>
+          <div class="seller-card">
+            <h3>SmartStore</h3>
+            <p>Магазин аксессуаров, часов и мобильной техники.</p>
+          </div>
+          <div class="seller-card">
+            <h3>GamePoint</h3>
+            <p>Товары для геймеров: мыши, клавиатуры и гарнитуры.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Связаться с нами</h2>
+        <form class="contact-form" id="contactForm">
+          <input type="text" id="name" placeholder="Ваше имя" />
+          <input type="email" id="email" placeholder="Ваш email" />
+          <textarea id="message" placeholder="Ваше сообщение"></textarea>
+          <button type="submit" class="btn">Отправить</button>
+        </form>
+        <p class="form-message" id="formMessage"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 MarketHub. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
